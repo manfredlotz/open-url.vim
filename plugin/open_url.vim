@@ -11,7 +11,7 @@ end
 let g:loaded_open_url = 1
 
 if !exists("g:open_url_browser")
-    let g:open_url_browser="firefox"
+    let g:open_url_browser="xdg-open"
 endif
 
 command! -range OpenURL execute '<line1>,<line2>call openurl#OpenURL()'
