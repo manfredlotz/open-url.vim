@@ -2,9 +2,9 @@ if exists("g:loaded_open_url")
   finish
 endif
 
-if !has("python")
+if !has('python3')
   echohl ErrorMsg
-  echon "The 'Open URL' plugin requires Python support."
+  echon "The 'Open URL' plugin requires Python 3 support."
   finish
 end
 
