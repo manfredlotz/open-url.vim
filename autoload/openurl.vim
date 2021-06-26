@@ -1,4 +1,4 @@
-pyx << EOF
+py3 << EOF
 def popen_url():
   import vim
   import re
@@ -19,7 +19,7 @@ def popen_url():
 EOF
 
 function! openurl#OpenURL()
-  pyx popen_url()
+  py3 popen_url()
 endfunction
 
 
