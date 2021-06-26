@@ -10,7 +10,7 @@ def popen_url():
   urls = re.findall(regex,line)
   if urls:
     # collect found urls
-    found = [{x[0] for x in urls]
+    found = [x[0] for x in urls]
     urls_str = ' '.join(found)
     browser = vim.eval("g:open_url_browser")
     for url in found:
